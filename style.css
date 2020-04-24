@@ -1,0 +1,107 @@
+body {
+    background-color: rgb(231, 208, 165);
+}
+
+h1 {
+    text-align: center;
+}
+
+div.calculator {
+    display: grid;
+    width: 400px;
+    position: relative;
+    margin: auto;
+    grid-template-areas: "one one one one two two two two three three three three"
+                         "four four four four five five five five six six six six"
+                         "seven seven seven seven eight eight eight eight nine nine nine nine"
+                         "zero zero zero zero zero zero zero zero zero zero zero zero"
+                         "add add add sub sub sub mul mul mul div div div"
+                         "equal equal equal equal equal equal text text text text text text"
+                         "clear clear clear clear clear clear clear clear clear clear clear clear";
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#one {
+    grid-area: one;
+    grid-column: 1 / 5;
+}
+
+#two {
+    grid-area: two;
+    grid-column: 5 / 9;
+}
+
+#three {
+    grid-area: three;
+    grid-column: 9 / 13;
+}
+
+#four {
+    grid-area: four;
+    grid-column: 1 / 5;
+}
+
+#five {
+    grid-area: five;
+    grid-column: 5 / 9;
+}
+
+#six {
+    grid-area: six;
+    grid-column: 9 / 13;
+}
+
+#seven {
+    grid-area: seven;
+    grid-column: 1 / 5;
+}
+
+#eight {
+    grid-area: eight;
+    grid-column: 5 / 9;
+}
+
+#nine {
+    grid-area: nine;
+    grid-column: 9 / 13;
+}
+
+#zero {
+    grid-area: zero;
+    grid-column: 1 / 13;
+}
+
+#add {
+    grid-area: add;
+    grid-column: 1 / 4;
+}
+
+#sub {
+    grid-area: sub;
+    grid-column: 4 / 7;
+}
+
+#mul {
+    grid-area: mul;
+    grid-column: 7 / 10;
+}
+
+#div {
+    grid-area: div;
+    grid-column: 10 / 13;
+}
+
+button.equals {
+    grid-area: equal;
+    grid-column: 1 / 7;
+}
+
+#display {
+    grid-area: text;
+    grid-column: 7 / 13;
+}
+
+button.clear {
+    grid-area: clear;
+    grid-column: 1 / 13;
+}
