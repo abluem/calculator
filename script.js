@@ -1,8 +1,3 @@
-// ADD DOM MANIPULATION TO MAKE CLEARING POSSIBLE:
-// - Create element (create textbox?), apeend child and find a way to append numbers
-// - Keep code or append user input???
-// - CLear button removes child and clears arrays
-
 let expressionArray = [];
 let operatorArray = [];
 
@@ -52,18 +47,11 @@ buttons.forEach((button) => {
         addToDisplay(answer);
     } else {
         addToDisplay(' ');
+        expressionArray.length = 0;
+        operatorArray.length = 0;
     }
   });
 });
-
-//document.querySelector('#clear').addEventListener('click', () => {
-//    addToDisplay(' ');
-//});
-
-//document.querySelector('#equ').addEventListener('click', (e) => {
-//    let solution = operate(x, operator, y);
-//    addToDisplay(solution);
-//});
 
 let addToExpression = (num) => expressionArray.push(num);
 

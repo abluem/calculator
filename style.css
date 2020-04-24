@@ -1,9 +1,24 @@
 body {
-    background-color: rgb(231, 208, 165);
+    background-color: #F5F5F5;
 }
 
 h1 {
     text-align: center;
+    font-size: 36px;
+    font-family: 'IM Fell Double Pica SC', serif;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    background-color: #FFF5EE;
+    border: 3px double #000;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Manrope', sans-serif;
 }
 
 div.calculator {
@@ -24,51 +39,61 @@ div.calculator {
 #one {
     grid-area: one;
     grid-column: 1 / 5;
+    border-color: #DC143C;
 }
 
 #two {
     grid-area: two;
     grid-column: 5 / 9;
+    border-color: #ff0000;
 }
 
 #three {
     grid-area: three;
     grid-column: 9 / 13;
+    border-color: #FF4500;
 }
 
 #four {
     grid-area: four;
     grid-column: 1 / 5;
+    border-color: #FFA500;
 }
 
 #five {
     grid-area: five;
     grid-column: 5 / 9;
+    border-color: #FFD700;
 }
 
 #six {
     grid-area: six;
     grid-column: 9 / 13;
+    border-color: #9ACD32;
 }
 
 #seven {
     grid-area: seven;
     grid-column: 1 / 5;
+    border-color: #228B22;
 }
 
 #eight {
     grid-area: eight;
     grid-column: 5 / 9;
+    border-color: #008B8B
 }
 
 #nine {
     grid-area: nine;
     grid-column: 9 / 13;
+    border-color: #00008B;
 }
 
 #zero {
     grid-area: zero;
     grid-column: 1 / 13;
+    border-color: #663399;
 }
 
 #add {
@@ -99,9 +124,13 @@ button.equals {
 #display {
     grid-area: text;
     grid-column: 7 / 13;
+    border: 3px double #000;
+    background-color: #FFF5EE;
 }
 
 button.clear {
     grid-area: clear;
     grid-column: 1 / 13;
+    font-family: 'IM Fell Double Pica SC', serif;
+    border-color: #8B4513;
 }
